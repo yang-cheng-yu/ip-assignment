@@ -1,0 +1,379 @@
+body {
+    background-color: #444455;
+    margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::selection {
+    background-color: #FFFF8866;
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#selected {
+    background-color: #FFAABB;
+}
+
+.navbar  {
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    user-select: none;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    background-color: #FFBBCC;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    font-size: 16pt;
+    color: white;
+    display: inline;
+    align-content: center;
+    flex: 1;
+}
+
+.navbar hr {
+    border: none;
+    margin: 0px;
+    padding: 30px;
+    background: linear-gradient(#00000055, #00000000);
+    mix-blend-mode: overlay;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #FFCCDD;
+}
+
+.info-box {
+    background-color: #3e5d79;
+    font-size: 12pt;
+    border-left: 7px solid #243646;
+    padding: 15px;
+    margin: 0 50px;
+    width: 60%;
+    border-radius: 4px;
+    position: relative;
+}
+
+.info-box::before {
+    content: "ℹ️";
+    float: none;
+    left: 10px;
+    font-size: 1.5em;
+    vertical-align: sub;
+}
+
+.first-element {
+    padding-top: 80px;
+}
+
+article {
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.emoji {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+}
+
+section {
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 60pt;
+    color: white;
+    margin: 10px 50px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 36pt;
+    color: white;
+    margin-left: 35px;
+    padding-left: 25px;
+}
+
+h3 {
+    font-size: 28pt;
+    color: white;
+    margin: 0.25em 1em;
+}
+
+hr {
+    margin: 0px;
+    border: none;
+    border-top: 3px solid #FFBBCC;
+    padding: 50px;
+    background: linear-gradient(#00000033, #00000000);
+}
+
+a {
+    color:#FFBBCC;
+    text-decoration: none;
+}
+
+a:hover {
+    color:white;
+    border-top: white;
+    border-width: 2px;
+}
+
+p {
+    font-size: 14pt;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+.drop::first-letter {
+    font-size: 60pt;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding-right: 0.1em;
+    line-height: 1;
+    float: left;
+}
+
+ol {
+    font-size: 24pt;
+    color: white;
+    padding: 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.decagrammaton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    font-size: 2em;
+    list-style-position: inside;
+    border: 5px solid #FFAAAA;
+    background-color: #333344;
+    transition: 0.3s;
+}
+
+.decagrammaton:hover {
+    border-color: #FFDDAA;
+}
+
+.decagrammaton li {
+    transition: 0.5s;
+    margin: 10px;
+    width: calc(50% - 26px);
+    height: 10em;
+    border: 3px dotted white;
+    background: radial-gradient(#FFFFFF33, #00000000);
+    text-align: center;
+}
+
+.decagrammaton li:hover {
+    background-color: #555566;
+}
+
+.decagrammaton li img {
+    height: 197px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.other-raid {
+    display: flex;
+    flex-wrap: wrap;
+    transition: 0.3s;
+    width: 60%;
+    justify-content: center;
+    background-color: #333344;
+    border: 5px dotted #FFAAAA;
+}
+
+.other-raid:hover {
+    border-color: #FFDDAA;
+}
+
+.other-raid li {
+    transition: 0.5s;
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 26px);
+    height: 360px;
+    background: radial-gradient(#FFFFFF33, #00000000);
+    border: 3px double white;
+    text-align: center;
+}
+
+.other-raid li:hover {
+    background-color: #555566;
+}
+
+.other-raid li img {
+    height: 305px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+mark {
+    background-color: #bdd2ffbb;
+}
+
+img {
+    user-select: none;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+figure {
+    height: 400px;
+    text-align: center;
+    border-radius: 50px;
+    background: radial-gradient(#FFFFFF33, #00000000);
+    border: 5px solid #5565DD;
+}
+
+figure > img,
+figure > a img {
+    transition: 500ms ease-in-out;
+}
+
+figure:hover > img,
+figure:hover > a img {
+    transform: scale(1.1);
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: 24pt;
+    color: white;
+    background-color: #BBDDCC;
+    border: 5px solid #77EEDD;
+    border-radius: 30px;
+    margin: 0px;
+}
+
+.shirok {
+    width: auto;
+    height: 75%;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.contact {
+    margin: 100px 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-align: center;
+}
+
+.contact li a img {
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 200ms ease-in-out;
+}
+
+.contact li a img:hover {
+    transform: scale(1.1);
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000CC;
+    z-index: 1;
+}
+
+th, td {
+    padding: 0px;
+}
+
+.abydos {
+    width: 80%;
+    border: 3px solid #FFFFFF;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.abydos thead tr {
+    background-color: #333344;
+}
+
+.abydos tbody tr:hover {
+    background-color: #555566;
+}
+
+footer {
+    background-color: #555566;
+    text-align: center;
+    align-content: center;
+    color: #CCCCDD;
+    font-size: 10pt;
+    height: 70px;
+    margin-top: 50px;
+}

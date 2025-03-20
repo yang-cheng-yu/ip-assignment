@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=DotGothic16&family=M+PLUS+1:wght@100..900&display=swap');
+
+
+h1 {
+    font-family: "M PLUS 1", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: italic;
+}
+
+h2 {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+    font-family: "BIZ UDGothic", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
