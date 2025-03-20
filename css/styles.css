@@ -86,12 +86,6 @@ header {
     padding-top: 80px;
 }
 
-article {
-    margin: 0px;
-    padding: 0px;
-    line-height: 1.5;
-}
-
 .center {
     text-align: center;
     margin: 0 auto;
@@ -102,6 +96,14 @@ article {
     width: 1em;
     vertical-align: middle;
 }
+
+.inline-img {
+    height: 2em;
+    width: auto;
+    vertical-align: middle;
+}
+
+/*GLOBAL*/
 
 section {
     margin: 10px;
@@ -134,6 +136,14 @@ hr {
     border-top: 3px solid #FFBBCC;
     padding: 50px;
     background: linear-gradient(#00000033, #00000000);
+}
+
+mark {
+    background-color: #bdd2ffbb;
+}
+
+img {
+    user-select: none;
 }
 
 a {
@@ -175,11 +185,14 @@ ul {
     padding: 0px;
 }
 
+/*Raids/Lists*/
+
 .decagrammaton {
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     justify-content: center;
+    margin-bottom: 100px;
     font-size: 2em;
     list-style-position: inside;
     border: 5px solid #FFAAAA;
@@ -246,13 +259,7 @@ ul {
     object-fit: contain;
 }
 
-mark {
-    background-color: #bdd2ffbb;
-}
-
-img {
-    user-select: none;
-}
+/*Shirok/Gallery*/
 
 .figures {
     display: grid;
@@ -293,6 +300,8 @@ figcaption {
     padding: 25px;
     border-radius: 50px;
 }
+
+/*Contact*/
 
 .contact {
     margin: 100px 0;
@@ -352,20 +361,32 @@ th, td {
     padding: 0px;
 }
 
-.abydos {
+/*SCHALE Database/Tables*/
+
+.schale {
     width: 80%;
     border: 3px solid #FFFFFF;
     color: white;
+    margin: 0 auto;
     text-align: center;
     align-content: center;
 }
 
-.abydos thead tr {
+.schale thead tr {
     background-color: #333344;
 }
 
-.abydos tbody tr:hover {
+.schale thead tr th {
+    padding: 20px;
+}
+
+.schale tbody tr:hover {
     background-color: #555566;
+}
+
+.schale tfoot tr td {
+    background-color: #333344;
+    padding: 30px;
 }
 
 footer {
