@@ -71,14 +71,12 @@ header {
 }
 
 .navbar a {
-    display: block;
-    padding: 5px 0;
+    display: inline-block;
     color: #FFFFFF;
-    text-decoration: none;
 }
 
 .navbar ul li a {
-    padding: 25px 0;
+    padding: 1vw 2vw;
 }
 
 .navbar li:hover {
