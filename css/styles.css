@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=DotGothic16&family=M+PLUS+1:wght@100..900&display=swap');
+
 body {
     background-color: #444455;
     margin: 0px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "M PLUS 1", sans-serif;
 }
 
 body::selection {
@@ -18,6 +20,10 @@ header {
     background-color: #FFAABB;
 }
 
+
+
+/*Nav*/
+
 .navbar  {
     position: fixed;
     width: 100%;
@@ -27,17 +33,29 @@ header {
     z-index: 1000;
 }
 
-.navbar ul {
+.navbar div {
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.5fr;
     background-color: #FFBBCC;
-    margin: 0px;
-    padding: 0px;
+    align-content: center;
+}
+
+.navbar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .navbar li {
-    font-size: 16pt;
+    font-size: 1.4em;
     color: white;
     display: inline;
     align-content: center;
@@ -54,14 +72,29 @@ header {
 
 .navbar a {
     display: block;
-    padding: 20px;
+    padding: 5px 0;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar ul li a {
+    padding: 25px 0;
+}
+
+.navbar li:hover {
     background-color: #FFCCDD;
 }
+
+#profile-icon {
+    transition: 0.2s;
+}
+
+#profile-icon:hover {
+    scale: 1.1;
+    filter: brightness(0.3);
+}
+
+/*General Classes*/
 
 .info-box {
     background-color: #3e5d79;
@@ -103,6 +136,8 @@ header {
     vertical-align: middle;
 }
 
+
+
 /*GLOBAL*/
 
 section {
@@ -113,7 +148,7 @@ section {
 h1 {
     font-size: 60pt;
     color: white;
-    margin: 10px 50px;
+    margin: 0 50px;
     padding: 20px;
 }
 
@@ -184,6 +219,8 @@ ul {
     list-style-type: none;
     padding: 0px;
 }
+
+
 
 /*Raids/Lists*/
 
@@ -259,6 +296,8 @@ ul {
     object-fit: contain;
 }
 
+
+
 /*Shirok/Gallery*/
 
 .figures {
@@ -301,6 +340,8 @@ figcaption {
     border-radius: 50px;
 }
 
+
+
 /*Contact*/
 
 .contact {
@@ -324,17 +365,6 @@ figcaption {
     transform: scale(1.1);
 }
 
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
 video {
     min-width: 100%;
     min-height: 100%;
@@ -344,6 +374,16 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .video-background::before {
@@ -358,10 +398,47 @@ video {
 }
 
 th, td {
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 }
 
+
+
 /*SCHALE Database/Tables*/
+
+.schale-title {
+    background-color: #333344;
+    padding-top: 150px;
+    transition: 0.5s ease-in-out;
+}
+
+.schale-title:hover {
+    background: none;
+}
+
+.schale-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#88DDFFCC, #FFFFFF);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.schale-title:hover::before {
+    opacity: 0.8;
+}
+
+caption {
+    font-family: "BIZ UDGothic", sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 10px;
+}
 
 .schale {
     width: 80%;
@@ -370,22 +447,47 @@ th, td {
     margin: 0 auto;
     text-align: center;
     align-content: center;
+    border-collapse: collapse;
 }
 
 .schale thead tr {
+    font-family: "M PLUS 1", sans-serif;
     background-color: #333344;
+    font-size: 1.5em;
 }
 
 .schale thead tr th {
-    padding: 20px;
+    padding: 15px;
+    border: 2px solid #00000033;
+}
+
+
+.schale tbody tr td {
+    border: 2px solid #00000033;
+    transition: 0.1s ease-in-out;
+}
+
+.schale tbody tr:nth-child(even) {
+    background-color: #404050;
 }
 
 .schale tbody tr:hover {
     background-color: #555566;
 }
 
+.schale tbody tr td:hover {
+    background-color: #666677;
+}
+
+.schale tbody tr:hover td:nth-child(1) ~ th:nth-child(1),
+.schale tbody tr:hover td:nth-child(2) ~ th:nth-child(2),
+.schale tbody tr:hover td:nth-child(3) ~ th:nth-child(3) {
+    background-color: #404050;
+}
+
 .schale tfoot tr td {
-    background-color: #333344;
+    background-color: #303040;
+    font-style: italic;
     padding: 30px;
 }
 

@@ -5,34 +5,55 @@
     <link rel="icon" href="icon/icon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists</title>
+    <title>Schale</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <li><img src="images/Susremaster.png" alt="icon" style="width:auto; height:60px;" draggable="false"><img src="images/IPassignment.png" alt="IPassignment" style="width:auto; height:60px;"draggable="false"></li>
-                <li><a href="index.html">&#x1F3E0; <b>Home</a></b></li>
-                <li><a href="gallery.html">&#x1f43a; <b>Shirok</b></a></li>
-                <li><a href="lists.html">&#x2694; <b>Raids</b></a></li>
-                <li id="selected"><a href="tables.html">&#x1f4ca; <b>Database</b></a></li>
-                <li><a href="contact.html">&#x1F468; <b>Contact</a></b></li>
-            </ul>
+            <div>
+                <span>
+                    <img src="images/nav/Susremaster.png" alt="icon" style="width:auto; height:60px;" draggable="false">
+                    <img src="images/nav/IPassignment.png" alt="IPassignment" style="width:auto; height:60px;" draggable="false">
+                </span>
+                <ul>
+                    <li><a href="index.html">&#x1F3E0; <b>Home</b></a></li>
+                    <li><a href="gallery.html">&#x1f43a; <b>Shirok</b></a></li>
+                    <li><a href="lists.html">&#x2694; <b>Raids</b></a></li>
+                    <li id="selected"><a href="tables.html">&#x1f4ca; <b>Database</b></a></li>
+                    <li><a href="contact.html">&#x1F468; <b>Contact</b></a></li>
+                </ul>
+                <span>
+                    <a href="form.html">
+                        <img src="images/nav/profile-icon.png" alt="IPassignment" style="width:auto; height:60px;" draggable="false" id="profile-icon">
+                    </a>
+                </span>
+            </div>
+            <hr>
         </nav>
     </header>
 
-    <div class="first-element center">
+    <div class="first-element schale-title center">
         <img src="images/Schale_Icon_1.png" alt="SCHALE Icon">
-        <h1>SCHALE Database</h1>
+        <h1 style="padding-bottom: 120px;">SCHALE Database</h1>
+    </div>
+
+    <div class="center">
         <hr>
         <img src="images/GSC/GSC_Icon.png" alt="GSC Icon">
-
         <table class="schale">
+            <caption>
+                GSC Management
+            </caption>
             <thead>
                 <tr>
-                    <th id="idcol">ID</th>
-                    <th colspan="2" id="namecol">Name</th>
-                    <th id="piccol">Portrait</th>
+                    <th rowspan="2" style="width: 10%;">ID</th>
+                    <th colspan="2" style="width: 50%;">Name</th>
+                    <th rowspan="2" style="width: 20%;">Position</th>
+                    <th rowspan="2" style="width: 20%;">Portrait</th>
+                </tr>
+                <tr>
+                    <th style="width: 25%;">EN</th>
+                    <th style="width: 25%;">JP</th>
                 </tr>
             </thead>
             <tbody>
@@ -40,62 +61,71 @@
                     <td>0</td>
                     <td>GSC President</td>
                     <td>連邦生徒会長</td>
+                    <td>President</td>
                     <td><img src="images/GSC/GSC_President.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>Nanagami Rin</td>
                     <td>七神 リン</td>
+                    <td>Vice President</td>
                     <td><img src="images/GSC/Rin.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Yuraki Momoka</td>
                     <td>由良木 モモカ</td>
+                    <td>Chief of Transportation</td>
                     <td><img src="images/GSC/Momoka.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Iwabitsu Ayumu</td>
                     <td>岩櫃 アユム</td>
+                    <td>Secretary</td>
                     <td><img src="images/GSC/Ayumu.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>Shiranui Kaya</td>
                     <td>不知火 カヤ</td>
+                    <td>Chief of Defense</td>
                     <td><img src="images/GSC/Kaya.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>Oki Aoi</td>
                     <td>扇喜 アオイ</td>
+                    <td>Financial Assistant</td>
                     <td><img src="images/GSC/Aoi.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>6</td>
                     <td>Haine</td>
                     <td>ハイネ</td>
+                    <td>Chief of PE</td>
                     <td><img src="images/GSC/Haine.png" style="height: 200px; width: auto;"></td>
                 </tr>
                 <tr>
                     <td>7</td>
                     <td>Sumomo</td>
                     <td>スモモ</td>
+                    <td>Office Member</td>
                     <td><img src="images/GSC/Sumomo.png" style="height: 200px; width: auto;"></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td colspan="5">
-                        <i>"We thirst for the seven wailings. We bear the koan of Jericho."</i>
+                        "We thirst for the seven wailings. We bear the koan of Jericho."
                     </td>
                 </tr>
             </tfoot>
         </table>
     </div>
+    
     <footer>
-        Cheng Yu Yang 2025-03-20 &copy;
+        Cheng Yu Yang 2025-03-25 &copy;
     </footer>
 </body>
 </html>
