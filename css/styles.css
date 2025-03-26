@@ -2,6 +2,7 @@
 
 body {
     background-color: #444455;
+    color: white;
     margin: 0px;
     font-family: "M PLUS 1", sans-serif;
 }
@@ -56,7 +57,6 @@ header {
 
 .navbar li {
     font-size: 1.4em;
-    color: white;
     display: inline;
     align-content: center;
     flex: 1;
@@ -72,7 +72,7 @@ header {
 
 .navbar a {
     display: inline-block;
-    color: #FFFFFF;
+    color: white;
 }
 
 .navbar ul li a {
@@ -152,21 +152,18 @@ section {
 
 h1 {
     font-size: 60pt;
-    color: white;
     margin: 0 50px;
     padding: 20px;
 }
 
 h2 {
     font-size: 36pt;
-    color: white;
     margin-left: 35px;
     padding-left: 25px;
 }
 
 h3 {
     font-size: 28pt;
-    color: white;
     margin: 0.25em 1em;
 }
 
@@ -199,7 +196,6 @@ a:hover {
 
 p {
     font-size: 14pt;
-    color: white;
     margin: 10px;
     padding: 20px;
     line-height: 2.5;
@@ -216,7 +212,6 @@ p {
 
 ol {
     font-size: 24pt;
-    color: white;
     padding: 0px;
 }
 
@@ -331,7 +326,6 @@ figure:hover > a img {
 figcaption {
     font-weight: bold;
     font-size: 24pt;
-    color: white;
     background-color: #BBDDCC;
     border: 5px solid #77EEDD;
     border-radius: 30px;
@@ -428,7 +422,7 @@ th, td {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#88DDFFCC, #FFFFFF);
+    background: linear-gradient(#88DDFFCC, white);
     z-index: -1;
     opacity: 0;
     transition: 1s ease-in-out;
@@ -448,7 +442,6 @@ caption {
 .schale {
     width: 80%;
     border: 3px solid #FFFFFF;
-    color: white;
     margin: 0 auto;
     text-align: center;
     align-content: center;
@@ -484,16 +477,36 @@ caption {
     background-color: #666677;
 }
 
-.schale tbody tr:hover td:nth-child(1) ~ th:nth-child(1),
-.schale tbody tr:hover td:nth-child(2) ~ th:nth-child(2),
-.schale tbody tr:hover td:nth-child(3) ~ th:nth-child(3) {
-    background-color: #404050;
-}
-
 .schale tfoot tr td {
     background-color: #303040;
     font-style: italic;
     padding: 30px;
+}
+
+
+
+/*Account/Form*/
+
+label {
+    display: block;
+}
+
+.options label {
+    display: inline;
+}
+
+.account-info {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+    padding: 5px;
+}
+
+.merge {
+    grid-column: span 2;
 }
 
 footer {

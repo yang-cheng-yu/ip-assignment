@@ -36,33 +36,58 @@
     <div class="first-element center">
         <h1>Connect Account</h1>
         <form action="/submit">
-            <fieldset>
+            <fieldset class="account-info">
                 <legend>Account Info</legend>
+                
+                <div class="grid-item merge">
+                    <label for="accountId">Account ID</label>
+                    <input type="number" name="accountId" id="accountId" class="hide-spinner" placeholder="4 digits (0-9)">
+                </div>
 
-                <label for="accountId">Account ID</label>
-                <input type="number" name="accountId" id="accountId" class="hide-spinner" placeholder="4 digits (0-9)">
+                <div class="grid-item">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Last Name">
+                </div>
 
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="Last Name">
+                <div class="grid-item">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </div>
 
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <div class="grid-item">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="grid-item">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                
+                <div class="grid-item">
+                    <label for="birthDate">Birth Date</label>
+                    <input type="date" name="birthDate" id="birthDate">
+                </div>
+                
+                <div class="grid-item">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="o">Other</option>
+                    </select>
+                </div class="grid-item">
 
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username">
-
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Password">
-
-                <label for="birthDate">Birth Date</label>
-                <input type="date" name="birthDate" id="birthDate">
-
-                <label for="gender">Gender</label>
-                <select name="gender" id="gender">
-                    <option value="m">Male</option>
-                    <option value="f">Female</option>
-                    <option value="o">Other</option>
-                </select>
+                <div class="grid-item options">
+                    Account Type <br>
+                    <label for="trinity">Trinity</label>
+                    <input type="radio" name="accountType" id="trinity" value="Trinity">
+                    <label for="gehenna">Gehenna</label>
+                    <input type="radio" name="accountType" id="gehenna" value="Gehenna">
+                    <label for="millenium">Millenium</label>
+                    <input type="radio" name="accountType" id="millenium" value="Millenium">
+                    <label for="schale">SCHALE</label>
+                    <input type="radio" name="accountType" id="schale" value="SCHALE">
+                </div>
             </fieldset>
         </form>
     </div>
