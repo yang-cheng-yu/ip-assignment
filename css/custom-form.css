@@ -1,0 +1,80 @@
+/*Theme*/
+
+body {
+    background-color: #444455;
+    color: white;
+}
+
+
+
+/*Account/Form*/
+
+.set-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+fieldset {
+    border: 5px double #FFBBCC;
+    border-radius: 20px;
+}
+
+legend {
+    border: 3px solid #FFBBCC;
+    background-color: #FFBBCC55;
+    padding: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+.options label {
+    display: inline;
+}
+
+.student-info {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+    padding: 15px;
+}
+
+.merge {
+    grid-column: span 2;
+}
+
+input {
+    color: white;
+    border: 5px solid #333344;
+    background-color: #555566;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+}
+
+input::placeholder {
+    color: #FFFFFFAA;
+}
+
+select {
+    color: white;
+    border: 5px solid #333344;
+    background-color: #555566;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.hide-spinner::-webkit-inner-spin-button,
+.hide-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

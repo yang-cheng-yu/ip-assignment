@@ -1,95 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=DotGothic16&family=M+PLUS+1:wght@100..900&display=swap');
 
+
+/*Theme*/
+
 body {
     background-color: #444455;
     color: white;
-    margin: 0px;
-    font-family: "M PLUS 1", sans-serif;
-}
-
-body::selection {
-    background-color: #FFFF8866;
-}
-
-header {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-
-#selected {
-    background-color: #FFAABB;
-}
-
-
-
-/*Nav*/
-
-.navbar  {
-    position: fixed;
-    width: 100%;
-    margin: 0px;
-    user-select: none;
-    padding: 0px;
-    z-index: 1000;
-}
-
-.navbar div {
-    display: grid;
-    grid-template-columns: 1fr 5fr 0.5fr;
-    background-color: #FFBBCC;
-    align-content: center;
-}
-
-.navbar span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.navbar li {
-    font-size: 1.4em;
-    display: inline;
-    align-content: center;
-    flex: 1;
-}
-
-.navbar hr {
-    border: none;
-    margin: 0px;
-    padding: 30px;
-    background: linear-gradient(#00000055, #00000000);
-    mix-blend-mode: overlay;
-}
-
-.navbar a {
-    display: inline-block;
-    color: white;
-}
-
-.navbar ul li a {
-    padding: 1vw 2vw;
-}
-
-.navbar li:hover {
-    background-color: #FFCCDD;
-}
-
-#profile-icon {
-    transition: 0.2s;
-}
-
-#profile-icon:hover {
-    scale: 1.1;
-    filter: brightness(0.3);
 }
 
 /*General Classes*/
@@ -113,15 +29,6 @@ header {
     vertical-align: sub;
 }
 
-.first-element {
-    padding-top: 80px;
-}
-
-.center {
-    text-align: center;
-    margin: 0 auto;
-}
-
 .emoji {
     height: 1em;
     width: 1em;
@@ -133,13 +40,6 @@ header {
     width: auto;
     vertical-align: middle;
 }
-
-.hide-spinner::-webkit-inner-spin-button,
-.hide-spinner::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 
 
 
@@ -185,7 +85,6 @@ img {
 
 a {
     color:#FFBBCC;
-    text-decoration: none;
 }
 
 a:hover {
@@ -485,29 +384,7 @@ caption {
 
 
 
-/*Account/Form*/
-
-label {
-    display: block;
-}
-
-.options label {
-    display: inline;
-}
-
-.account-info {
-    display: grid;
-    text-align: left;
-    grid-template-columns: 1fr 1fr;
-}
-
-.grid-item {
-    padding: 5px;
-}
-
-.merge {
-    grid-column: span 2;
-}
+/*Footer*/
 
 footer {
     background-color: #555566;

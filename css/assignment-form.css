@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=DotGothic16&family=M+PLUS+1:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/*Base*/
+body {
+    margin: 0px;
+    font-family: "M PLUS 1", sans-serif;
+}
+
+
+
+/*General Classes*/
+
+.right-align {
+    text-align: right;
+}
+
+
+
+/*Theme*/
+
+body {
+    background-color: white;
+    color: #333333;
+}
+
+
+
+/*Misc*/
+
+.navbar > * {
+    display: none;
+}
+
+.blue-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0088FF;
+    color: white;
+    padding: 20px;
+}
+
+.blue-box a::before {
+    font-size: 1.5em;
+    color: white;
+    transition: 0.3s;
+}
+
+.blue-box a:hover::before {
+    scale: 1.1;
+    filter: brightness(0.6);
+}
+
+
+
+/*Bootstrap*/
+
+.bi::before {
+    display: inline-block;
+    content: "";
+    vertical-align: -.125em;
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+}
+
+
+
+/*Account/Form*/
+
+.set-section {
+    margin: 0 6vw;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+legend {
+    padding: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+}
+
+.options label {
+    display: inline;
+}
+
+.student-info {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+    padding: 15px;
+}
+
+.merge {
+    grid-column: span 2;
+}
+
+input {
+    border: 1px solid #AAAAAA;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #AAAAAA;
+}
+
+select {
+    border: 1px solid #AAAAAA;
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.hide-spinner::-webkit-inner-spin-button,
+.hide-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

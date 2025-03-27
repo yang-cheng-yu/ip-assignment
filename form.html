@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/assignment-form.css">
+    <!-- <link rel="stylesheet" href="css/base.css"> -->
     <link rel="icon" href="icon/icon.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,61 +38,68 @@
     </header>
 
     <div class="first-element center">
-        <h1>Connect Account</h1>
-        <form action="/submit">
-            <fieldset class="account-info">
-                <legend>Account Info</legend>
-                
-                <div class="grid-item merge">
-                    <label for="accountId">Account ID</label>
-                    <input type="number" name="accountId" id="accountId" class="hide-spinner" placeholder="4 digits (0-9)">
-                </div>
+        <div class="blue-box">
+            <span>Fill in the information about the new student</span>
+            <span class="right-align"><a href="index.html" class="right-align bi bi-house-fill"></a></span>
+        </div>
 
-                <div class="grid-item">
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Last Name">
-                </div>
-
-                <div class="grid-item">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-                </div>
-
-                <div class="grid-item">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Username">
-                </div>
-                <div class="grid-item">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                </div>
-                
-                <div class="grid-item">
-                    <label for="birthDate">Birth Date</label>
-                    <input type="date" name="birthDate" id="birthDate">
-                </div>
-                
-                <div class="grid-item">
-                    <label for="gender">Gender</label>
-                    <select name="gender" id="gender">
-                        <option value="m">Male</option>
-                        <option value="f">Female</option>
-                        <option value="o">Other</option>
-                    </select>
-                </div class="grid-item">
-
-                <div class="grid-item options">
-                    Account Type <br>
-                    <label for="trinity">Trinity</label>
-                    <input type="radio" name="accountType" id="trinity" value="Trinity">
-                    <label for="gehenna">Gehenna</label>
-                    <input type="radio" name="accountType" id="gehenna" value="Gehenna">
-                    <label for="millenium">Millenium</label>
-                    <input type="radio" name="accountType" id="millenium" value="Millenium">
-                    <label for="schale">SCHALE</label>
-                    <input type="radio" name="accountType" id="schale" value="SCHALE">
-                </div>
-            </fieldset>
+        <form action="/submit" class="first-element">
+            <div class="set-section">
+                <fieldset class="student-info">
+                    <legend><i class="bi bi-info-circle-fill"></i> Student Info</legend>
+                    
+                    <div class="grid-item merge">
+                        <label for="studentId">Student ID</label>
+                        <input type="number" name="studentId" id="studentId" class="hide-spinner" placeholder="Numbers (0-9)">
+                    </div>
+    
+                    <div class="grid-item merge">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                    </div>
+    
+                    <div class="grid-item merge">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                    </div>
+    
+                    <div class="grid-item">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="grid-item">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <label for="birthDate">Birth Date</label>
+                        <input type="date" name="birthDate" id="birthDate">
+                    </div>
+                    
+                    <div class="grid-item">
+                        <label for="courses">Courses</label>
+                        <select name="courses" id="courses">
+                            <option value="i">Internet Programming</option>
+                            <option value="p">Programming Patterns</option>
+                            <option value="a">Application Development</option>
+                            <option value="u">Unix</option>
+                        </select>
+                    </div class="grid-item">
+    
+                    <div class="grid-item options">
+                        Schedule preference <br>
+                        <label for="morning">Morning</label>
+                        <input type="radio" name="accountType" id="morning" value="Morning">
+                        <label for="afternoon">Afternoon</label>
+                        <input type="radio" name="accountType" id="afternoon" value="Afternoon">
+                        <label for="backToBack">Back to back</label>
+                        <input type="radio" name="accountType" id="backToBack" value="BackToBack">
+                        <label for="noPreference">No preference</label>
+                        <input type="radio" name="accountType" id="noPreference" value="None">
+                    </div>
+                </fieldset>
+            </div>
         </form>
     </div>
     
