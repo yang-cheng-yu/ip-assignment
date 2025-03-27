@@ -43,9 +43,9 @@
             <span class="right-align"><a href="index.html" class="right-align bi bi-house-fill"></a></span>
         </div>
 
-        <form action="/submit" class="first-element">
+        <form action="/submit">
             <div class="set-section">
-                <fieldset class="student-info">
+                <fieldset class="two-col">
                     <legend><i class="bi bi-info-circle-fill"></i> Student Info</legend>
                     
                     <div class="grid-item merge">
@@ -80,31 +80,111 @@
                     <div class="grid-item">
                         <label for="courses">Courses</label>
                         <select name="courses" id="courses">
+                            <option value="">--</option>
                             <option value="i">Internet Programming</option>
                             <option value="p">Programming Patterns</option>
                             <option value="a">Application Development</option>
                             <option value="u">Unix</option>
                         </select>
                     </div class="grid-item">
+
+                    <div class="grid-item merge">
+                        <b>Campus</b> <br>
+                        <div class="options">
+                            <span>
+                                <label for="Laval">Laval</label>
+                                <input type="radio" name="campus" id="Laval" value="Laval">
+                            </span>
+                            <span>
+                                <label for="Montreal">Montreal</label>
+                                <input type="radio" name="campus" id="Montreal" value="Montreal">
+                            </span>
+                            <span>
+                                <label for="Longueuil">Longueuil</label>
+                                <input type="radio" name="campus" id="Longueuil" value="Longueuil">
+                            </span>
+                        </div>
+                        
+                    </div>
     
-                    <div class="grid-item options">
-                        Schedule preference <br>
-                        <label for="morning">Morning</label>
-                        <input type="radio" name="accountType" id="morning" value="Morning">
-                        <label for="afternoon">Afternoon</label>
-                        <input type="radio" name="accountType" id="afternoon" value="Afternoon">
-                        <label for="backToBack">Back to back</label>
-                        <input type="radio" name="accountType" id="backToBack" value="BackToBack">
-                        <label for="noPreference">No preference</label>
-                        <input type="radio" name="accountType" id="noPreference" value="None">
+                    <div class="grid-item merge">
+                        <b>Schedule preference</b> <br>
+                        <div class="options">
+                            <span>
+                                <label for="morning">Morning</label>
+                                <input type="checkbox" name="classPreference" id="morning" value="Morning">
+                            </span>
+                            <span>
+                                <label for="afternoon">Afternoon</label>
+                                <input type="checkbox" name="classPreference" id="afternoon" value="Afternoon">
+                            </span>
+                            <span>
+                                <label for="backToBack">Back to back</label>
+                                <input type="checkbox" name="classPreference" id="backToBack" value="BackToBack">
+                            </span>
+                            <span>
+                                <label for="noPreference">No preference</label>
+                                <input type="checkbox" name="classPreference" id="noPreference" value="None">
+                            </span>
+                        </div>
+                        
                     </div>
                 </fieldset>
-            </div>
+
+                <fieldset class="three-col">
+                    <legend><i class="bi bi-telephone-fill"></i> Contact Info</legend>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="john@example.com">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="number" name="phone" id="phone" class="hide-spinner" placeholder="(514)-999-9999">
+                    </div>
+
+                    <div>
+                        <label for="color">Color</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+                </fieldset>
+
+                <fieldset class="two-col">
+                    <legend><i class="bi bi-credit-card-2-front-fill"></i> Address</legend>
+                    <div class="grid-item merge">
+                        <label for="street">Street</label>
+                        <input type="text" name="street" id="street" placeholder="Street Name">
+                    </div>
+    
+                    <div class="grid-item merge">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="City">
+                    </div>
+
+                    <div class="grid-item">
+                        <label for="province">Province</label>
+                        <input type="text" name="province" id="province" placeholder="Province">
+                    </div>
+    
+                    <div class="grid-item">
+                        <label for="post">Postal code</label>
+                        <input type="text" name="post" id="post" placeholder="A1A 1A1">
+                    </div>
+
+                    <div class="grid-item merge">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" rows="4" placeholder="Any comments?"></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="reset" value="Reset" id="reset">
+                <input type="submit" value="Submit" id="submit">
+            </div> 
         </form>
     </div>
     
     <footer>
-        Cheng Yu Yang 2025-03-25 &copy;
+        Cheng Yu Yang 2025-03-26 &copy;
     </footer>
 </body>
 </html>

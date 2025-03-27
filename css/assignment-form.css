@@ -37,7 +37,7 @@ body {
     justify-content: space-between;
     background-color: #0088FF;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
 .blue-box a::before {
@@ -49,6 +49,12 @@ body {
 .blue-box a:hover::before {
     scale: 1.1;
     filter: brightness(0.6);
+}
+
+.hide-spinner::-webkit-inner-spin-button,
+.hide-spinner::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
@@ -73,6 +79,7 @@ body {
 }
 
 fieldset {
+    margin-top: 5vw;
     border: none;
     border-bottom: 1px solid #AAAAAA;
 }
@@ -88,14 +95,35 @@ label {
     display: block;
 }
 
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
 .options label {
     display: inline;
 }
 
-.student-info {
+.options input {
+    vertical-align: middle;
+    border: none;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+}
+
+.two-col {
     display: grid;
     text-align: left;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.three-col {
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 .grid-item {
@@ -126,8 +154,35 @@ select {
     border-radius: 5px;
 }
 
-.hide-spinner::-webkit-inner-spin-button,
-.hide-spinner::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+textarea {
+    border: 1px solid #AAAAAA;
+    background-color: #F5F5F5;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#reset {
+    width: auto;
+    padding: 0 10px;
+    color: white;
+    background-color: #FF5555;
+}
+
+#submit {
+    width: auto;
+    padding: 0 10px;
+    color: white;
+    background-color: #0088FF;
+}
+
+
+
+/*Footer*/
+
+footer {
+    margin-top: 20px;
+    padding: 25px;
+    text-align: center;
+    color: #AAAAAA;
+    background-color: #EEEEEE;
 }
