@@ -51,12 +51,6 @@ body {
     filter: brightness(0.6);
 }
 
-.hide-spinner::-webkit-inner-spin-button,
-.hide-spinner::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 
 
 /*Bootstrap*/
@@ -75,7 +69,7 @@ body {
 /*Account/Form*/
 
 .set-section {
-    margin: 0 6vw;
+    margin: 50px 18vw;
 }
 
 fieldset {
@@ -97,7 +91,7 @@ label {
 
 .options {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .options label {
@@ -130,8 +124,12 @@ label {
     padding: 15px;
 }
 
-.merge {
+.two-col .merge {
     grid-column: span 2;
+}
+
+.three-col .merge {
+    grid-column: span 3;
 }
 
 input {
@@ -163,16 +161,10 @@ textarea {
 
 #reset {
     width: auto;
-    padding: 0 10px;
-    color: white;
-    background-color: #FF5555;
 }
 
 #submit {
     width: auto;
-    padding: 0 10px;
-    color: white;
-    background-color: #0088FF;
 }
 
 
