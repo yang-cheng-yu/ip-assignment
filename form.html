@@ -38,20 +38,24 @@
         </nav>
     </header>
 
-    <div class="first-element center">
+    <div class="first-element">
         <div class="blue-box">
             <span>Fill in the information about the new student</span>
             <span class="right-align"><a href="index.html" class="right-align bi bi-house-fill"></a></span>
         </div>
 
-        <form action="/submit">
+        <div class="first-element" id="alert-container">
+            
+        </div>
+
+        <form id="form">
             <div class="set-section">
                 <fieldset class="two-col">
                     <legend><i class="bi bi-info-circle-fill"></i> Student Info</legend>
                     
                     <div class="grid-item merge">
                         <label for="studentId">Student ID</label>
-                        <input type="number" name="studentId" id="studentId" class="hide-spinner" placeholder="Numbers (0-9)">
+                        <input type="text" name="studentId" id="studentId" placeholder="abc.123.1(234)">
                     </div>
     
                     <div class="grid-item merge">
@@ -79,59 +83,16 @@
                     </div>
                     
                     <div class="grid-item">
-                        <label for="courses">Courses</label>
-                        <select name="courses" id="courses">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
                             <option value="">--</option>
-                            <option value="i">Internet Programming</option>
-                            <option value="p">Programming Patterns</option>
-                            <option value="a">Application Development</option>
-                            <option value="u">Unix</option>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
                         </select>
-                    </div class="grid-item">
-
-                    <div class="grid-item">
-                        <b>Campus</b> <br>
-                        <div class="options">
-                            <span>
-                                <label for="Laval">Laval</label>
-                                <input type="radio" name="campus" id="Laval" value="Laval">
-                            </span>
-                            <span>
-                                <label for="Montreal">Montreal</label>
-                                <input type="radio" name="campus" id="Montreal" value="Montreal">
-                            </span>
-                            <span>
-                                <label for="Longueuil">Longueuil</label>
-                                <input type="radio" name="campus" id="Longueuil" value="Longueuil">
-                            </span>
-                        </div>
-                        
-                    </div>
-    
-                    <div class="grid-item">
-                        <b>Schedule preference</b> <br>
-                        <div class="options">
-                            <span>
-                                <label for="morning">Morning</label>
-                                <input type="checkbox" name="classPreference" id="morning" value="Morning">
-                            </span>
-                            <span>
-                                <label for="afternoon">Afternoon</label>
-                                <input type="checkbox" name="classPreference" id="afternoon" value="Afternoon">
-                            </span>
-                            <span>
-                                <label for="backToBack">Back to back</label>
-                                <input type="checkbox" name="classPreference" id="backToBack" value="BackToBack">
-                            </span>
-                            <span>
-                                <label for="noPreference">No preference</label>
-                                <input type="checkbox" name="classPreference" id="noPreference" value="None">
-                            </span>
-                        </div>
                     </div>
                 </fieldset>
 
-                <fieldset class="three-col">
+                <fieldset class="two-col">
                     <legend class="merge"><i class="bi bi-telephone-fill"></i> Contact Info</legend>
                     <div class="grid-item">
                         <label for="email">Email</label>
@@ -140,12 +101,7 @@
 
                     <div class="grid-item">
                         <label for="phone">Phone</label>
-                        <input type="number" name="phone" id="phone" class="hide-spinner" placeholder="(514)-999-9999">
-                    </div>
-
-                    <div class="grid-item">
-                        <label for="color">Color</label>
-                        <input type="color" name="color" id="color">
+                        <input type="text" name="phone" id="phone" placeholder="(514)999-9999">
                     </div>
                 </fieldset>
 
@@ -170,21 +126,19 @@
                         <label for="post">Postal code</label>
                         <input type="text" name="post" id="post" placeholder="A1A 1A1">
                     </div>
-
-                    <div class="grid-item merge">
-                        <label for="comments">Comments</label>
-                        <textarea name="comments" id="comments" rows="4" placeholder="Any comments?"></textarea>
-                    </div>
                 </fieldset>
 
                 <input type="reset" value="Reset" id="reset" class="btn btn-danger">
-                <button id="submit" class="btn btn-primary">Submit</button>
+                <button id="submit" class="btn btn-primary" type="button">Submit</button>
             </div> 
         </form>
     </div>
     
     <footer>
-        Cheng Yu Yang 2025-04-22 &copy;
+        Cheng Yu Yang 2025-05-25 &copy;
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>

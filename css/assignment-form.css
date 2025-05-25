@@ -28,8 +28,9 @@ body {
 
 /*Misc*/
 
-.navbar > * {
+header {
     display: none;
+    padding: 0;
 }
 
 .blue-box {
@@ -49,6 +50,18 @@ body {
 .blue-box a:hover::before {
     scale: 1.1;
     filter: brightness(0.6);
+}
+
+#alert-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#alert-container > div {
+    padding: 30px 0;
+    width: 80%;
 }
 
 
@@ -165,6 +178,14 @@ textarea {
 
 #submit {
     width: auto;
+}
+
+.success {
+    border-color: #88FF88;
+}
+
+.error {
+    border-color: #FF8888;
 }
 
 
