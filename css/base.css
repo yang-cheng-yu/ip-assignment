@@ -38,13 +38,13 @@ a {
 .navbar  {
     position: fixed;
     width: 100%;
-    margin: 0px;
+    margin: 0;
     user-select: none;
-    padding: 0px;
+    padding: 0;
     z-index: 1000;
 }
 
-.navbar div {
+.navbar > div {
     display: grid;
     grid-template-columns: 1fr 5fr 0.5fr;
     background-color: #FFBBCC;
